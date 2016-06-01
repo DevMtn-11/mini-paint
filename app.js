@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   var color = 'white';
   var colors = 'red green blue yellow white';
 
@@ -22,7 +23,8 @@ $(document).ready(function(){
     color = 'white';
   });
 
-  $('.box').on('click',function(){
+  $('.box').hover(function(){
+    $(this).removeClass(colors);
     $(this).addClass(color);
   });
 
